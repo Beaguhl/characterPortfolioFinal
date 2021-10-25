@@ -1,0 +1,15 @@
+<h1 class="title text-center">
+    Create character
+</h1>
+<div class="parchment">
+    {{>header}}
+<form class="vertical" action="/character/create" method="POST">
+    <label>Name</label>
+    <input type="text" name="name">
+    <label>Race</label>
+    <input type="text" name="race">
+    <label>Stats</label>
+    <input type="text" name="stats">
+    <input type="submit" name="submit" value="create">
+</form>
+</div>

@@ -1,0 +1,35 @@
+<h1 class="title">
+    <div class="text-center">
+        View Enemies
+    </div>
+</h1>
+<div class="parchment">
+    {{>header}}
+    {{#if warhammerEnemies}}
+        <ul>
+            {{#each warhammerEnemies}}
+                <ul class="noBullets">
+                <li>
+                    Race: {{race}} 
+                </li>
+                <li>
+                    stats: {{stats}}
+                </li>
+                <li>
+                    Description: {{description}}
+                </li>
+                <li>
+                    <a class="btn" href='/enemy/{{id}}/delete'>
+                        Delete {{name}}
+                    </a>
+                </li>
+                <li>
+                    <a class="btn" href='/enemy/{{id}}/update'>
+                        Update {{name}}
+                    </a>
+                </li>
+            </ul>
+            {{/each}}
+        </ul>
+    {{/if}}
+</div>

@@ -1,0 +1,34 @@
+<h1 class="title text-center">
+    Character portfolio
+</h1>
+ 
+<div class="parchment">
+    {{>header}}
+        <h6>
+            {{#if session.isLoggedIn}}
+                You are logged in
+            {{/if}}
+        </h6>
+        <h1>
+            View and create characters
+        </h1>
+        <a class="btn btn-primary" href='/character/view'>
+            View character
+        </a>
+
+        <a class="btn btn-primary" href="/character/create">
+            Create character
+        </a>
+
+        <h1>
+            View and create enemies
+        </h1>
+        <a class="btn btn-primary" href="/enemy/view">
+            View enemy
+        </a>
+
+        <a class="btn btn-primary" href="/enemy/create">
+            Create enemy
+        </a>
+    
+</div>

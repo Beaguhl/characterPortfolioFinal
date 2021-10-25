@@ -1,0 +1,35 @@
+<h1 class="title text-center">
+    View character
+</h1>
+
+<div class="parchment">
+    {{>header}}
+    {{#if warhammerCharacters}}
+       
+        {{#each warhammerCharacters}}
+            <ul class="noBullets">
+                <li>
+                    Name: {{name}} 
+                </li>
+                <li>
+                    Race: {{race}}
+                </li>
+                <li>
+                    Stats: {{stats}}
+                </li>
+                <li>
+                    <a class="btn" href='/character/{{id}}/delete'>
+                        Delete {{name}}
+                    </a>
+                </li>
+                <li>
+                    <a class="btn" href='/character/{{id}}/update'>
+                        Update {{name}}
+                    </a>
+                </li>
+            </ul>
+        {{/each}}
+       
+    {{/if}}
+</div>
+ 

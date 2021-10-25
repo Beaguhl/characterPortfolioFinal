@@ -1,0 +1,15 @@
+<h1 class="title text-center">
+    Update enemies
+</h1>
+<div class="parchment">
+    {{>header}}
+<form action="/enemy/{{enemyId}}/update" method="POST">
+    <label>Race</label>
+    <input type="text" name="race">
+    <label>Stats</label>
+    <input type="text" name="stats">
+    <label>Description</label>
+    <input type="text" name="description">
+    <input type="submit" value="update">
+</form>
+</div>
